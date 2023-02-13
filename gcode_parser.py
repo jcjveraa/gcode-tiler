@@ -27,11 +27,11 @@ def update_gcode_line_xy(x: float, y: float, line: str, precision=4) -> str:
     return line
 
 
-parse_gcode_line("G1 X22.7508 Y-21.8884")
-parse_gcode_line("G1X23.7508Y-21.8884")
-parse_gcode_line("G1X22.7508Y-21.8884")
-parse_gcode_line("G1Y-21.8884")
-parse_gcode_line("G1X-21.8884")
+# parse_gcode_line("G1 X22.7508 Y-21.8884")
+# parse_gcode_line("G1X23.7508Y-21.8884")
+# parse_gcode_line("G1X22.7508Y-21.8884")
+# parse_gcode_line("G1Y-21.8884")
+# parse_gcode_line("G1X-21.8884")
 
-print(update_gcode_line_xy(math.pi, -math.e, "G1X22.7508Y-21.8884"))
-print(update_gcode_line_xy(math.pi, -math.e, "G1 X22.7508 Y-21.8884"))
+# print(update_gcode_line_xy(math.pi, -math.e, "G1X22.7508Y-21.8884"))
+# print(update_gcode_line_xy(math.pi, -math.e, "G1 X22.7508 Y-21.8884"))

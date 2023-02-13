@@ -30,7 +30,7 @@ def rotate_point_around_point(
 ) -> tuple[float, float]:
     center_x, center_y = rotation_point[0], rotation_point[1]
     # translate to origin
-    x, y = point[0] - center_x, point[1] - center_y
+    x, y = translate_point(point, (-center_x, - center_y))
     # rotate
     x, y = rotate_point_around_origin((x, y), angle=angle, degrees=degrees)
     # translate back
@@ -42,6 +42,8 @@ def rotate_point_around_point(
 
     return x, y
 
+def translate_point(point: tuple[float, float], translation: tuple[float, float]) -> tuple[float, float]:
+    return point[0]+translation[0], point[1]+translation[1]
 
-print(rotate_point_around_origin((0, 2), 90))
-print(rotate_point_around_point((0, 2), (0, 1), 90))
+# print(rotate_point_around_origin((0, 2), 90))
+# print(rotate_point_around_point((0, 2), (0, 1), 90))
