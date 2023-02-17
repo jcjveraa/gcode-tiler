@@ -11,7 +11,7 @@ def rotate_point_around_origin(
 
     cos_angle, sin_angle = math.cos(angle), math.sin(angle)
 
-    x, y = point[0], point[1]
+    x, y = float(point[0]), float(point[1])
     new_x = x * cos_angle - y * sin_angle
     new_y = y * cos_angle + x * sin_angle
     if round_result:
