@@ -10,7 +10,8 @@ for line in input.readlines():
         x, y = rotate_point_around_origin((x, y), 180)
         x, y = translate_point((x, y), (50, 0))
         line = update_gcode_line_xy(x,y,line)
-    print(x, y, line)
+    output.write(line + '\n')
+    
 
 input.close()
 output.close()
