@@ -14,9 +14,8 @@ def get_coord(matcher, line):
 
 def parse_gcode_line(line: str):
     global last_x, last_y
+    
     line = line.strip()
-    # using_spaces = re.search(r"\s", line) is not None
-    # sep = ' ' if using_spaces else ''
     x, y = get_coord(x_coord_regex, line), get_coord(y_coord_regex, line)
 
     if y is None and x is None:
