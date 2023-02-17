@@ -42,8 +42,6 @@ def rotate_point_around_point(
 
     return x, y
 
+
 def translate_point(point: tuple[float, float], translation: tuple[float, float]) -> tuple[float, float]:
     return point[0]+translation[0], point[1]+translation[1]
-
-# print(rotate_point_around_origin((0, 2), 90))
-# print(rotate_point_around_point((0, 2), (0, 1), 90))
