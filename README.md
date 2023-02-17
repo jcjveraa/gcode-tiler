@@ -7,5 +7,9 @@ The Cat I use as an example was downloaded from https://freesvg.org/cat-line-art
 
 Run the example program by running `python runner.py`
 
+![before](https://user-images.githubusercontent.com/3942301/219658993-f20e0abd-edc2-4b2c-86ed-dbfd57632833.gif)
+![after](https://user-images.githubusercontent.com/3942301/219659010-86dc425a-6e34-4685-a52c-58cc05420529.gif)
+
+
 ## TODO
  - Detect & prevent motor start/stop between copies
